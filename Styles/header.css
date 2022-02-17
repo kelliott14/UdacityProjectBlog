@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 10px 0  #F6BD60 inset;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    font-family: 'Shizuru', cursive;
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: #F6BD60;
+    border-bottom: 2px solid #F6BD60;
+}
+
+#nav-header {
+    font-size: 1.5em;
+}
+
+@media (max-width:440px ) {
+    #nav-header{
+        font-size: 1em;
+    }
+
+    header li{
+        padding: 0 10px;
+    }
+
+}
+
+
+

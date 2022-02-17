@@ -1,0 +1,9 @@
+footer {
+    text-align: center;
+}
+
+@media (max-width:440px ){
+    h3 {
+        font-size: 0.8em;
+    }    
+}
