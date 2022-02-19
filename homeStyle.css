@@ -54,6 +54,10 @@ aside {
     grid-area: sd;
 }
 
+footer{
+    grid-area: ft;
+}
+
 .wrapper h2,
 .wrapper div,
 .wrapper ul {
