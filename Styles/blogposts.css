@@ -29,6 +29,7 @@
 
 .skipButtons{
     grid-area: btn;
+    margin-top: 50px;
 }
 
 .nextButton,
@@ -58,4 +59,10 @@ blockquote{
 .subheading{
     font-family: 'Roboto Condensed', sans-serif;
     border-bottom: 2px solid #6A2E35;
+}
+
+.endheading{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
 }
