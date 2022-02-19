@@ -3,60 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-01-Blog</title>
     <link rel="stylesheet" href="homeStyle.css">
 </head>
-<body>
-    <header>
-        <h1 id="nav-header">kt's blog</h1>
-        <nav>
-            <ul>
-                <li> <a href="/home.html">home</a></li>
-                <li> <a href="/Pages/blogHome.html">blog</a></li>
-                <li> <a href="/home.html#contact">contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
+<body>
     <div class="wrapper">
+        <header>
+            <h1 id="nav-header">kt's blog</h1>
+            <nav>
+                <ul>
+                    <li> <a href="/home.html">home</a></li>
+                    <li> <a href="/Pages/blogHome.html">blog</a></li>
+                    <li> <a href="/home.html#contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <div class="main">
             <h2>latest blog post</h2>
-            
-            <div class="blogPosts">
-                <h3> <a href="/Pages/Blogpost01.html">blog post 01: this stuff is a test</a></h3>
-                <p>
+            <div class="blogPostCard">
+                <h3 class="homeBlogHeader"> <a href="/Pages/Blogpost04.html">blog post 04: this stuff is a test</a></h3>
+                <p class="bi-line">
                     this is a test of the stuff yeah
                 </p>
             </div>
         </div>
         
-        <aside>
+        <aside class="aboutContact">
             <div class="about">
                 <h2>about</h2>
                 <div class="textblock">
-                    this bit is all about me.
-                    this bit is all about me.
-                    this bit is all about me.
-                    this bit is all about me.
-                    this bit is all about me.
+                    hi, my name's katie and this is my blog.
+                    I am a web developer in training. Have a look around.
+                    Make yourself at home. Don't mind the cat. If you
+                    need anything, just let me know.
                 </div>
             </div>
-            <div id="contact">
+
+            <div class="contact">
                 <h2>contact</h2>
                 <ul class="contactLinks">
-                    <li>github</li>
-                    <li>linkedin</li>
+                    <li><a href="https://github.com/kelliott14" target="blank">github</a></li>
+                    <li><a href="https://www.linkedin.com/in/katie-elliott-sydney/" target="blank">linkedin</a></li>
                 </ul>
             </div>
         </aside>
+        
+        
+        <footer>
+            <h3>thanks for stopping by!</h3>
+        </footer>
     </div>
-
-    
-    <footer>
-        <h3>thanks for stopping by!</h3>
-    </footer>
 </body>
 </html>

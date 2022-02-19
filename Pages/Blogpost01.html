@@ -8,31 +8,111 @@
     <link rel="stylesheet" href="/homeStyle.css">
 </head>
 <body>
-    <header>
-        <h1 id="nav-header">KT's Blog</h1>
-        <nav>
-            <ul>
-                <li> <a href="/home.html">Home</a></li>
-                <li> <a href="/Pages/blogHome.html">Blog</a></li>
-                <li> <a href="/home.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    
+    <div class="blogWrapper" id="blogPostWrapper">
+        <header>
+            <h1 id="nav-header">kt's blog</h1>
+            <nav>
+                <ul>
+                    <li> <a href="/home.html">home</a></li>
+                    <li> <a href="/Pages/blogHome.html">blog</a></li>
+                    <li> <a href="/home.html#contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="blogPost">
+            <h2 class="blogPostHeader">blog post 01 | some handy gitbash commands</h2>
+            <h3 class="author">by me</h3>
+            <p class="textpost">
+                It's hard to remember these when you haven't used gitbash for a while. When I opened it up
+                to start this project, I realised I'd forgotten them all. So here's a little list of the 
+                ones I had go digging through my memory (and goggle) to find!
+            </p>
+<!-- paragraph on cd -->
+            <h3 class="subheading">change directory</h3>
 
-    <div class="blogWrapper">
-        <h2>Blog Post 01 | this stuff</h2>
-        <p class="textpost">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            <figure>
+                <img src="../Images/blog1cd.JPG" alt="gitbash screenshot of cd command">
+                <figcaption>little screenshot from my gitbash showing change directory</figcaption>
+            </figure>
+
+            <p class="textpost">
+                Let's start with basics.
+            </p>
+            <blockquote>cd [foldername]</blockquote> 
+
+            <p class="textpost"> This one stands for change directory. By change it means open and 
+                by directory it means folder. Type in cd documents to move into the documents folder.
+                You can also hit
+            </p>
+
+            <blockquote>cd ..</blockquote> 
+
+            <p class="textpost">to step back one folder. And just
+            </p>
+
+            <blockquote>cd</blockquote>
+
+            <p class="textpost">to go all the way out. Hint: you can type a few letters of the folder 
+                you want and hit tab, it'll prefill the rest.
+            </p>    
+
+<!-- paragraph on ls -->
+            <h3 class="subheading">list files</h3>
+
+            <figure>
+                <img src="../Images/blog1ls.JPG" alt="gitbash screenshot of ls command">
+                <figcaption>little screenshot from my gitbash showing list files</figcaption>
+            </figure>
             
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.   
-        </p>
+            <p class="textpost">
+               This one means to list files. Looking for a folder? Can't work out if you're in the right
+               spot? Can't remember the name of the folder you're looking for? You want this one:
+            </p>
+
+            <blockquote>ls</blockquote>
+
+<!-- paragraph on mkdir -->
+            <h3 class="subheading">make directory</h3>
+
+            <figure>
+                <img src="../Images/blog1mkdir.JPG" alt="gitbash screenshot of mkdir command">
+                <figcaption>little screenshot from my gitbash showing make directory</figcaption>
+            </figure>
+
+            <p class="textpost">
+               We're making a new folder, we're using gitbash, we want 
+            </p>
+
+            <blockquote>mkdir [foldername]</blockquote>
+            <p class="textpost">Remember to leave out spaces or use ' ' (or " ") around your text if you want
+                a foldername with spaces.
+            </p>
+
+<!-- paragraph on rm -->
+            <h3 class="subheading">remove a file or directory</h3>
+
+            <figure>
+                <img src="../Images/blog1rmdir.JPG" alt="gitbash screenshot of rmdir command">
+                <figcaption>little screenshot from my gitbash showing remove directory</figcaption>
+            </figure>
+
+            <p class="textpost">
+               We've made it but we don't want it. You want:
+            </p>
+
+            <blockquote>rmdir [foldername]</blockquote>
+            <p class="textpost">And if it's a file you want to get rid of, it's just:
+            </p>
+            <blockquote>rm [filename]</blockquote>
+
+            <form class="skipButtons">
+                <button class="nextButton" type="submit" formaction="./Blogpost02.html">Next</button>
+            </form>
+        </div>
+
     </div>
     
-<form>
-    <button type="submit" formaction="./Blogpost02.html"> Next  </button>
-</form>
 
 </body>
 </html>

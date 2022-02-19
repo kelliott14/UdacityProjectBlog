@@ -2,6 +2,7 @@
 @import url(/Styles/footer.css);
 @import url(/Styles/blog.css);
 @import url(/Styles/blogposts.css);
+@import url(/Styles/bloghome.css);
 
 /* header font */
 @import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
@@ -11,8 +12,6 @@
 
 
 body {
-    display: flex;
-    flex-direction: column;
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #D5DFE5;
 }
@@ -37,16 +36,22 @@ h3 {
 }
 
 .wrapper {
-    display: flex;
-    height: 80vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr 6fr 0.5fr;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main sd sd sd"
+    "ft ft ft ft ft ft ft ft";
 }
 
 .main {
-    flex: 3;
+    grid-area: main;
 }
 
 aside {
-    flex: 1;
+    grid-area: sd;
 }
 
 .wrapper h2,
@@ -59,37 +64,16 @@ aside {
     list-style-type: none;
 }
 
-.blogPosts {
-    background-color: rgba(65, 103, 136, 0.2);
-    
-}
-
-.blogPosts p {
-    padding: 10px;
-}
-
-
-/* media queries */
-@media (max-width:800px ){
+@media (max-width:630px ){
    
-    .wrapper {
-        display: flex;
-    }
-
-    .main {
-        flex: 2;
-    }
-
-    aside {
-        flex: 2;
-    }
-    
-}
-
-@media (max-width:550px ){
-   
-    .wrapper {
-        display: inline;
+    .wrapper{
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr 6fr 4fr 0.5fr;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main main main main"
+        "sd sd sd sd sd sd sd sd"
+        "ft ft ft ft ft ft ft ft";
     }
     
 }

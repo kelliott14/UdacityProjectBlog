@@ -1,5 +1,6 @@
 footer {
     text-align: center;
+    grid-area: ft;
 }
 
 @media (max-width:440px ){
