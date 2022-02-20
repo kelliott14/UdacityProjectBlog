@@ -9,35 +9,89 @@
     <link rel="stylesheet" type="text/css" href="../homeStyle.css">
 </head>
 <body>
-    <header>
-        <h1 id="nav-header">KT's Blog</h1>
-        <nav>
-            <ul>
-                <li> <a href="../index.html">home</a></li>
-                <li> <a href="./blogHome.html">blog</a></li>
-                <li> <a href="../index.html#contact">contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="blogWrapper">
-        <h2>Blog Post 02 | this stuff</h2>
-        <p class="textpost">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.   
-        </p>
-    </div>
     
-    <form>
-        <button type="submit" formaction="./Blogpost01.html">Previous</button>
-        <button type="submit" formaction="./Blogpost03.html">Next</button>
-    </form>
+    <div class="blogWrapper" id="blogPostWrapper">
+        <header>
+            <h1 id="nav-header">kt's blog</h1>
+            <nav>
+                <ul>
+                    <li> <a href="../index.html">home</a></li>
+                    <li> <a href="./blogHome.html">blog</a></li>
+                    <li> <a href="../index.html#contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="blogPost">
+            <h2 class="blogPostHeader">blog post 02 | library fit out</h2>
+            <h3 class="author">by me</h3>
+            <p class="textpost">
+                Ok so you've decided to learn web development. And you have to build a site after site (fun!)
+                but you also need to pick out colours, find images, find text (no so fun!) to make your 
+                website feel more real. So here are a few of my favourites, straight from my source library.
+            </p>
+
+<!-- paragraph on lorem ipsum -->
+            <h3 class="subheading">lorem ipsum</h3>
+            <p class="textpost">
+                We keep seeing paragraphs of latin (like old school, spell casting latin) bulking
+                out our sample websites. What is it? Why do people keep using it? Lorem ipsum is a well used placeholder
+                text. It's a simple copy and paste into your design to test how a few paragraphs of text will look.
+                Use it as a placeholder for your text so you can adjust your design around a full page.
+             </p>
+            <figure>
+                <img src="../Images/blog2lorem.JPG" alt="lorem ipsum generator website">
+                <figcaption>the Lorem Ipsum generator</figcaption>
+            </figure>
+            <p class="textpost">
+                Check out the Lorem Ipsum generator here:
+                <a href="https://www.lipsum.com/feed/html" target="blank">Lorem Ipsum</a>
+            </p>
+    
+<!-- paragraph on lorem ipsum -->
+            <h3 class="subheading">placeholder images</h3>
+            <p class="textpost">
+                So now that we have our placeholder text, what about placeholder images? Yes, there is 
+                a website for that and it is literally called placeholder.com.
+            </p>
+            <figure>
+                <img src="../Images/blog2placeholder.JPG" alt="placeholder website">
+                <figcaption>the placeholder imager</figcaption>
+            </figure>
+            <p class="textpost">
+                Check out the Placeholder here:
+                <a href="https://placeholder.com/#How_To_Use_Our_Placeholders" target="blank">Placeholder</a>
+            </p>
+           
+<!-- paragraph on lorem ipsum -->
+            <h3 class="subheading">coolors</h3>
+            <p class="textpost">
+                Putting together websites when you are learning how to get them working is 
+                one thing. Making them look nice is a whole nother thing. At least with this colour scheme 
+                generator, it's one less thing to think of.
+            </p>
+            <figure>
+                <img src="../Images/blog2coolors.JPG" alt="coolors website">
+                <figcaption>Coolors in action</figcaption>
+            </figure>
+            <p class="textpost">
+                Check out Coolors here:
+                <a href="https://coolors.co/" target="blank">Coolors</a>
+            </p>
+            
+<!-- end paragraph -->
+            <h3 class="endheading">Now go code!</h3>
+        </div>
+        
+        <form class="skipButtons">
+            <button type="submit" class="nextButton" formaction="./Blogpost01.html">Previous</button>
+            <button type="submit" class="previousButton" formaction="./Blogpost03.html">Next</button>
+        </form>
+    </div>
 
     <footer>
         <h3>thanks for stopping by!</h3>
     </footer>
+    
 </body>
 </html>
