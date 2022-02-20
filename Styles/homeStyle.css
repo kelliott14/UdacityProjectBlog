@@ -1,7 +1,7 @@
-@import url(./Styles/header.css);
-@import url(./Styles/footer.css);
-@import url(./Styles/blogHome.css);
-@import url(./Styles/blogposts.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./blogHome.css);
+@import url(./blogposts.css);
 
 /* header font */
 @import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
@@ -60,9 +60,7 @@ footer{
     grid-area: ft;
 }
 
-.wrapper h2,
-.wrapper div,
-.wrapper ul {
+.wrapper h2{
     padding: 0 10px 5px 20px;
 }
 
@@ -98,8 +96,11 @@ footer{
     animation: fadeIt 2s forwards; 
 }
 
+#homeThumbnail{
+    width: 30vw;
+}
 
-@media (max-width:630px ){
+@media (max-width:630px){
    
     .wrapper{
         grid-template-columns: repeat(7, 1fr);
@@ -109,6 +110,15 @@ footer{
         "main main main main main main main main"
         "sd sd sd sd sd sd sd sd"
         "ft ft ft ft ft ft ft ft";
+    }
+   
+}
+
+@media (max-width:450px){
+    .blogPostCard{
+        display: block;
+        margin: 10px;
+        padding: 10px;
     }
     
 }

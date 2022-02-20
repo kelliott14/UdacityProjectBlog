@@ -78,3 +78,13 @@ blockquote{
 .websiteScreenshot{
     width: 70vw;
 }
+
+.thumbnail{
+    height: 100%;
+    width: 25vw;
+    padding-right: 15px;
+}
+
+.blogCardText{
+    display: block;
+}

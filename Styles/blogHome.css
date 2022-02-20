@@ -2,13 +2,13 @@
 .blogPostCard{
     background-color: rgba(65, 103, 136, 0.2);
     display: flex;
-    flex-direction: column;
-    align-items:stretch;
+    flex-direction: row;
     margin: 10px;
+    padding-bottom: 0;
 }
 
 .bi-line{
-    margin: 10px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
 #blogHomeWrapper{

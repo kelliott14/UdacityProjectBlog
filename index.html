@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-01-Blog</title>
-    <link rel="stylesheet" type="text/css" href="homeStyle.css">
+    <link rel="stylesheet" type="text/css" href="./Styles/homeStyle.css">
 </head>
 
 <body>
@@ -24,26 +24,48 @@
         <main>
             <h2>latest blog post</h2>
             <div class="blogPostCard">
-                <h3 class="homeBlogHeader"> <a href="./Pages/Blogpost04.html">blog post 04 | some visual studio shortcuts</a></h3>
-                <p class="bi-line">
-                    There's somewhere between 1 million and 1 billion shortcuts for Visual Studio, here are 
-                    a few of my favourites.
-                </p>
-                <form>
-                    <button type="submit" class="readNow" formaction="./Pages/Blogpost04.html">Read here</button>
-                </form>
+                <img src="../Images/blog4doctypeTN.png" class="thumbnail" id="homeThumbnail" alt="thumbnail of the blog on VS shortcuts" aria-label="thumbnail of the blog on VS shortcuts">
+                <div class="blogCardText">
+                    <h3 class="homeBlogHeader"> <a href="./Pages/Blogpost04.html">blog post 04 | some visual studio shortcuts</a></h3>
+                    <p class="bi-line">
+                        There's somewhere between 1 million and 1 billion shortcuts for Visual Studio, here are 
+                        a few of my favourites.
+                    </p>
+                    <form>
+                        <button type="submit" class="readNow" formaction="./Pages/Blogpost04.html">Read here</button>
+                    </form>
+                </div>
             </div>
         </main>
         
         <aside class="aboutContact">
             <div class="about">
                 <h2>about</h2>
-                <div class="textblock">
-                    hi, my name's katie and this is my blog.
+                <p class="textblock">
+                    hi, welcome to my blog.
                     I am a web developer in training. Have a look around.
                     Make yourself at home. Don't mind the cat. If you
                     need anything, just let me know.
-                </div>
+                </p>
+                <p class="textblock">
+                    <b>name: </b>Katie Elliott
+                </p>
+                <p class="textblock">
+                    <b>title: </b>Studying
+                </p>
+                <p class="textblock">
+                    <b>currently: </b>Studying with Udacity
+                </p>
+                <p class="textblock">
+                    <b>bio: </b>In 2020 I completed a certificate in Full Stack Web Development at the University of Sydney. I'm back 
+                    at it, currently studying a Front End Web Developer with Udacity. I don't currently work in the tech space but I am 
+                    enjoying learning for now!
+                </p>
+                <p class="textblock">
+                    <b>me: </b>
+                    <img src="./Images/outline.png" class="thumbnail" alt="outline image of me">
+                </p>
+
             </div>
 
             <div class="contact" id="contact">
@@ -51,6 +73,7 @@
                 <ul class="contactLinks">
                     <li><a href="https://github.com/kelliott14" target="blank">github</a></li>
                     <li><a href="https://www.linkedin.com/in/katie-elliott-sydney/" target="blank">linkedin</a></li>
+                    <li><a href="https://www.twitter.com/" target="blank" alt="I don't have twitter">twitter</a></li>
                 </ul>
             </div>
         </aside>
