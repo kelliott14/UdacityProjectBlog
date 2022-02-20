@@ -6,7 +6,8 @@
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd"
     "main main main main main main main main"
-    "btn btn btn btn btn btn btn btn";
+    "btn btn btn btn btn btn btn btn"
+    "ft ft ft ft ft ft ft ft";
 }
 
 .blogPost{
@@ -77,17 +78,3 @@ blockquote{
 .websiteScreenshot{
     width: 70vw;
 }
-
-/* @media (max-width:617px ){
-    .nextButton,
-    .previousButton{
-        width: 10em;
-    }
-}
-
-@media (max-width:437px ){
-    .nextButton,
-    .previousButton{
-        width: 5em;
-    }
-} */
