@@ -9,10 +9,12 @@
 /* body font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
+html{
+    background-color: #D5DFE5;
+}
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #D5DFE5;
 }
 
 a {
@@ -46,7 +48,7 @@ h3 {
     "ft ft ft ft ft ft ft ft";
 }
 
-.main {
+main {
     grid-area: main;
 }
 
