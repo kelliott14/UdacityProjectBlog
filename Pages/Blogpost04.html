@@ -3,39 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-04-Blog</title>
     <link rel="stylesheet" type="text/css" href="../homeStyle.css">
 </head>
 <body>
-    <header>
-        <h1 id="nav-header">KT's Blog</h1>
-        <nav>
-            <ul>
-                <li> <a href="../index.html">home</a></li>
-                <li> <a href="./blogHome.html">blog</a></li>
-                <li> <a href="../index.html#contact">contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="blogWrapper" id="blogPostWrapper">
+        <header>
+            <h1 id="nav-header">kt's blog</h1>
+            <nav>
+                <ul>
+                    <li> <a href="../index.html">home</a></li>
+                    <li> <a href="./blogHome.html">blog</a></li>
+                    <li> <a href="../index.html#contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="blogWrapper">
-        <h2>Blog Post 04 | this stuff</h2>
-        <p class="textpost">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        <div class="blogPost">
+            <h2 class="blogPostHeader">blog post 04 | some visual studio shortcuts</h2>
+            <p class="textpost">
+                There's somewhere between 1 million and 1 billion shortcuts for Visual Studio, here are 
+                a few of my favourites.
+            </p>
+
+<!-- paragraph on tag.class -->
+            <h3 class="subheading">element dot class</h3>
+            <p class="textpost">
+                We're punching out some code, we're killing it. Do we really have to type out the &lt; and &gt; 
+                the 'class='? Nope, here's your shortcut:
+            </p>        
+            <blockquote>p.textpost [tab]</blockquote>
+            <p class="textpost">
+                Which turns into
+            </p>
+            <blockquote>&lt;p&gt;class="textpost">&lt;/p&gt; </blockquote>
+            <p class="textpost">easy.</p>
+
+<!-- paragraph on doctype -->
+            <h3 class="subheading">doctype, html, meta?</h3>
+            <p class="textpost">
+                No one likes starting on a blank document. It's intimidating. Also, no one remembers 
+                what needs to go in an html head tag, so what's the shortcut?
+            </p>
+            <blockquote>! [tab]</blockquote>
+            <p class="textpost">
+                And that turns into:
+            </p>
+            <figure>
+                <img src="../Images/blog4doctype.JPG" alt="printscreen of header" class="websiteScreenshot">
+                <figcaption>standard html header</figcaption>
+            </figure>
+
+<!-- paragraph on comments -->
+            <h3 class="subheading">leave a comment</h3>
+            <p class="textpost">
+                Each language has a different way to comment text. And I will not remember them. Or I will 
+                at least not remember which language needs which symbols? You know who does remember? Visual 
+                Studio.
+            </p>
+            <blockquote>ctrl /</blockquote>
+            <p class="textpost">
+                And that's it. Just type out your comment (single line, multiple lines), highlight it and hit ctrl /. VS will sort the rest.
+            </p>
+<!-- end paragraph -->
             
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.   
-        </p>
+             <h3 class="endheading">Now go code!</h3>       
+        </div>
+
+        <form class="skipButtons">
+            <button type="submit" class="previousButton" formaction="./Blogpost03.html">Previous</button>
+        </form>
+        
     </div>
 
-    <form>
-        <button type="submit" formaction="./Blogpost03.html">Previous</button>
-    </form>
-
-    
     <footer>
         <h3>thanks for stopping by!</h3>
     </footer>

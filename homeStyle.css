@@ -62,12 +62,41 @@ footer{
 .wrapper h2,
 .wrapper div,
 .wrapper ul {
-    padding: 5px 10px 0 20px;
+    padding: 0 10px 5px 20px;
 }
 
 .wrapper li {
     list-style-type: none;
 }
+
+.readNow{
+    padding: 0.75em;
+    margin: 1em;
+    width: 7em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 900;
+    border: none;
+    color: #6A2E35;
+    font-size: large;
+    cursor: pointer;
+}
+
+
+@-o-keyframes fadeIt {
+    0%   { background-color: #D5DFE5; }
+    50%  { background-color: rgba(65, 103, 136, 0.2); }
+    100%   { background-color: #D5DFE5; }
+}
+@keyframes fadeIt {
+    0%   { background-color: #D5DFE5; }
+    50%  { background-color: rgba(65, 103, 136, 0.2); }
+    100%   { background-color: #D5DFE5; }
+}
+
+:target{
+    animation: fadeIt 2s forwards; 
+}
+
 
 @media (max-width:630px ){
    

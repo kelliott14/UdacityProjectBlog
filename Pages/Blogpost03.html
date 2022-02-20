@@ -3,39 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-03-Blog</title>
     <link rel="stylesheet" type="text/css" href="../homeStyle.css">
 </head>
 <body>
-    <header>
-        <h1 id="nav-header">KT's Blog</h1>
-        <nav>
-            <ul>
-                <li> <a href="../index.html">home</a></li>
-                <li> <a href="./blogHome.html">blog</a></li>
-                <li> <a href="../index.html#contact">contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="blogWrapper" id="blogPostWrapper">
+        <header>
+            <h1 id="nav-header">kt's blog</h1>
+            <nav>
+                <ul>
+                    <li> <a href="../index.html">home</a></li>
+                    <li> <a href="./blogHome.html">blog</a></li>
+                    <li> <a href="../index.html#contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="blogWrapper">
-        <h2>Blog Post 03 | this stuff</h2>
-        <p class="textpost">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        <div class="blogPost">
+            <h2 class="blogPostHeader">blog post 03 | my frequently used apps when studying</h2>
+            <p class="textpost">
+               Studying is hard, scrolling is easy. Here are some apps I use put the phone down, and keep it down! 
+            </p>
+<!-- paragraph on focus -->
+            <h3 class="subheading">focus keeper</h3>
+            <p class="textpost">
+                Focus Keeper is an app that uses a Pomodoro timer to target your focus and to 
+                ensure you are resting too! The defaults are set to focus for 25mins, rest for 5, then on 
+                the 4th rest, it's a longer 20min one. Time flies when I'm using this app, I'm also 
+                standing up more often and giving my eyes a break from my screen more often. And, I'm also 
+                getting a lot of work done!
+            </p>
+            <figure>
+                <img src="../Images/blog3focus.PNG" alt="screenshot of focus keeper app" class="phoneScreenshots">
+                <figcaption>keep your focus with Focus Keeper</figcaption>
+            </figure>
+            <p class="textpost">
+                Available from the 
+                <a href="https://apps.apple.com/au/app/focus-keeper-time-management/id867374917" target="blank">Apple store</a> 
+                and from 
+                <a href="https://play.google.com/store/apps/details?id=co.pixo.apps.focuskeeper&hl=en_AU&gl=US" target="blank">Google Play</a>
+            </p>
+<!-- paragraph on toggle -->
+            <h3 class="subheading">toggl track</h3>
+            <p class="textpost">
+                So you have some goals, some targets, you want to spend x amount of hours on study and x amount on work 
+                and x amount of homework and x amount on self learning? But how do track that? With Toggl Track! Easy to launch, 
+                easy to use, and the reporting? Also great! Toggl works with a login, so you can access your stuff through 
+                a browser too.
+            </p>
+            <figure>
+                <img src="../Images/blog3toggle.PNG" alt="screenshot of toggl app" class="phoneScreenshots">
+                <figcaption>track your time with Toggl Track</figcaption>
+            </figure>
+            <p class="textpost">
+                Available from the 
+                <a href="https://apps.apple.com/us/app/toggl-track-hours-time-log/id1291898086" target="blank">Apple store</a> 
+                and from 
+                <a href="https://play.google.com/store/apps/details?id=com.toggl.giskard&hl=en_AU&gl=US" target="blank">Google Play</a>
+            </p>
+<!-- paragraph on forest -->
+            <h3 class="subheading">forest</h3>
+            <p class="textpost">Ok so this one is just a bit cute. It's also a way to "lock" you out of your phone. Because once 
+                you've hit 'plant', if you try to do anything else with your phone, your little tree will die. Every tree ends 
+                up in your little forest. A productive day never looked so good!
+            </p>
+            <figure>
+                <img src="../Images/blog3plant.PNG" alt="screenshot of forest app" class="phoneScreenshots">
+                <figcaption>grow your productivity with Forest</figcaption>
+            </figure>
+            <p class="textpost">
+                Available from the 
+                <a href="https://apps.apple.com/app/apple-store/id866450515?pt=690486&ct=official_website&mt=8" target="blank">Apple store</a> 
+                and from 
+                <a href="https://play.google.com/store/apps/details?id=cc.forestapp&referrer=utm_source%3Dofficalwebsite%26utm_medium%3Dbutton" target="blank">Google Play</a>
+            </p>
+ <!-- end paragraph -->
             
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.   
-        </p>
-    </div>
+            <h3 class="endheading">grab these apps, then put down your phone!</h3>       
+        </div>
 
-    <form>
-        <button type="submit" formaction="./Blogpost02.html">Previous</button>
-        <button type="submit" formaction="./Blogpost04.html">Next</button>
-    </form>
-
+        <form class="skipButtons">
+            <button type="submit" class="nextButton" formaction="./Blogpost02.html">Previous</button>
+            <button type="submit" class="previousButton" formaction="./Blogpost04.html">Next</button>
+        </form>
+    </div>  
+    
     <footer>
         <h3>thanks for stopping by!</h3>
     </footer>
