@@ -17,7 +17,7 @@
     grid-template-rows: 1fr 6fr 0.5fr;
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd"
-    "main main main main main main main main"
+    "main main main main main main sd sd sd"
     "ft ft ft ft ft ft ft ft";
 }
 
